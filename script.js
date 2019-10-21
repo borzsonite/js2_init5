@@ -45,3 +45,15 @@ document.querySelector('.task-7').onclick = () => {
     }
     document.querySelector('.task-7-out').innerHTML = task7_out;
 }
+
+//task 8
+document.querySelector('.task-8').onclick = () => {
+    let num1 = +document.getElementById('task8_input1').value;
+    let num2 = +document.getElementById('task8_input2').value;
+    let task8_out = '';
+    for (let i = num1; i <= num2; i++) {
+        task8_out += i + ' ';
+    }
+    document.querySelector('.task-8-out').innerHTML = task8_out;
+
+}
