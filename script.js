@@ -30,3 +30,8 @@ for (let i = 21; i >= 0; i = i - 3) {
     task_5_count += i + ' ';
 }
 document.querySelector('.task-5-out').innerHTML = task_5_count;
+
+// task 6
+for (let i = 0; i <= 5; i++) {
+    document.querySelector('.task-6-out').innerHTML += '* * * * * *<br>';
+}
