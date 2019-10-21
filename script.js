@@ -57,3 +57,20 @@ document.querySelector('.task-8').onclick = () => {
     document.querySelector('.task-8-out').innerHTML = task8_out;
 
 }
+
+//task 9
+document.querySelector('.task-9').onclick = () => {
+    let num1 = +document.getElementById('task9_input1').value;
+    let num2 = +document.getElementById('task9_input2').value;
+    if (num2 > num1) {
+        let task9_out = '';
+        for (let i = num1; i <= num2; i++) {
+            task9_out += i + ' ';
+        }
+        document.querySelector('.task-9-out').innerHTML = task9_out;
+    }
+
+    else alert('Ошибка! Второе число должно быть больше первого!')
+
+
+}
