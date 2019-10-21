@@ -35,3 +35,13 @@ document.querySelector('.task-5-out').innerHTML = task_5_count;
 for (let i = 0; i <= 5; i++) {
     document.querySelector('.task-6-out').innerHTML += '* * * * * *<br>';
 }
+
+//task 7 
+document.querySelector('.task-7').onclick = () => {
+    let count = +document.getElementById('task7_input').value;
+    let task7_out = '';
+    for (let i = count; i >= 0; i--) {
+        task7_out += i + ' ';
+    }
+    document.querySelector('.task-7-out').innerHTML = task7_out;
+}
