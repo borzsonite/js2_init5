@@ -97,3 +97,16 @@ document.querySelector('.task-13').onclick = () => {
         console.log(oneCount[i].innerHTML);
     }
 }
+
+//task 14
+let allInputs = document.querySelectorAll('input[type="number"]');
+document.querySelector('.task-14').onclick = () => {
+        for(let i = 0; i < allInputs.length; i++) {
+        allInputs[i].placeholder = "Введите данные";
+    }
+}
+
+//task 15
+document.querySelector('.task-15').onclick = () => {
+console.log(allInputs.length)
+}
