@@ -90,3 +90,10 @@ document.querySelector('.task-12').onclick = () => {
         oneCount[i].style.background = 'orange';
     }
 }
+
+//task 13
+document.querySelector('.task-13').onclick = () => {
+    for(let i = 0; i < oneCount.length; i++) {
+        console.log(oneCount[i].innerHTML);
+    }
+}
