@@ -71,6 +71,11 @@ document.querySelector('.task-9').onclick = () => {
     }
 
     else alert('Ошибка! Второе число должно быть больше первого!')
-
-
 }
+
+//task 10
+let evenYears = '';
+for(let i = 1902; i <= 1950; i+=2) {
+    evenYears += i + ' ';
+}
+document.querySelector('.task-10-out').innerHTML = evenYears;
