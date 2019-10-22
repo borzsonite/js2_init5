@@ -75,7 +75,7 @@ document.querySelector('.task-9').onclick = () => {
 
 //task 10
 let evenYears = '';
-for(let i = 1902; i <= 1950; i+=2) {
+for (let i = 1902; i <= 1950; i += 2) {
     evenYears += i + ' ';
 }
 document.querySelector('.task-10-out').innerHTML = evenYears;
@@ -86,14 +86,14 @@ document.querySelector('.task-11-out').innerHTML = "Колличество div.o
 
 //task 12
 document.querySelector('.task-12').onclick = () => {
-    for(let i = 0; i < oneCount.length; i++) {
+    for (let i = 0; i < oneCount.length; i++) {
         oneCount[i].style.background = 'orange';
     }
 }
 
 //task 13
 document.querySelector('.task-13').onclick = () => {
-    for(let i = 0; i < oneCount.length; i++) {
+    for (let i = 0; i < oneCount.length; i++) {
         console.log(oneCount[i].innerHTML);
     }
 }
@@ -101,12 +101,55 @@ document.querySelector('.task-13').onclick = () => {
 //task 14
 let allInputs = document.querySelectorAll('input[type="number"]');
 document.querySelector('.task-14').onclick = () => {
-        for(let i = 0; i < allInputs.length; i++) {
+    for (let i = 0; i < allInputs.length; i++) {
         allInputs[i].placeholder = "Введите данные";
     }
 }
 
 //task 15
 document.querySelector('.task-15').onclick = () => {
-console.log(allInputs.length)
+    console.log(allInputs.length)
+}
+
+//task 16 
+let myRadio = document.querySelectorAll('input[type="radio"]');
+document.querySelector('.task-16').onclick = () => {
+    for (let i = 0; i < myRadio.length; i++) {
+        if (myRadio[i].checked) {
+            document.querySelector('.task-16-out').innerHTML = myRadio[i].value;
+        }
+    }
+}
+
+//task 17
+document.querySelector('.task-17').onclick = () => {
+    myRadio[0].checked = true;
+}
+
+//task 18 
+document.querySelector('.task-18').onclick = () => {
+    let p1 = document.querySelectorAll('input[name="p1"]');
+    for (let i = 0; i < p1.length; i++) {
+        p1[i].value = i;
+        console.log(p1[i].value);
+    }
+}
+
+//task 19 
+document.querySelector('.task-19').onclick = () => {
+    let p2 = document.querySelectorAll('input[name="p2"]');
+    for (let i = 0; i < p2.length; i++) {
+        if (p2[i].checked && p2[i].value == 6) {
+            document.querySelector('.task-19-out').innerHTML = true;
+        }
+        else document.querySelector('.task-19-out').innerHTML = false;
+    }
+}
+
+//task 20
+let p3 = document.querySelectorAll('input[type="radio"][name="p3"]')
+for (let i = 0; i < p3.length; i++) {
+    p3[i].oninput = () => {
+        console.log("был изменен input");
+    };
 }
