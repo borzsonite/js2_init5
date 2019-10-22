@@ -79,3 +79,7 @@ for(let i = 1902; i <= 1950; i+=2) {
     evenYears += i + ' ';
 }
 document.querySelector('.task-10-out').innerHTML = evenYears;
+
+//task 11
+let oneCount = document.querySelectorAll('.one').length;
+document.querySelector('.task-11-out').innerHTML = "Колличество div.one = " + oneCount;
